@@ -26,22 +26,24 @@
       }
     </style>
   </head>
-  <body class="w-screen font-Bai overflow-x-hidden">
+  <body
+    class="w-screen font-Bai overflow-x-hidden"
+    style="
+      background: url('./images/bg-header-desktop.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    "
+  >
     <main class="w-full flex flex-col items-center justify-center">
       <div
         id="header"
-        class="w-[1000px] flex flex-col items-center justify-center"
-        style="
-          background: url('./images/bg-header-desktop.png');
-          background-size: contain;
-          background-repeat: no-repeat;
-        "
+        class="lg:w-[1000px] w-screen flex flex-col items-center justify-center"
       >
         <img src="./images/logo.svg" alt="logo" class="mt-24" />
-        <h1 class="font-semibold text-5xl mt-10 mb-5 mx-28">
+        <h1 class="font-semibold text-3xl lg:text-5xl mt-10 mb-5 text-center">
           A history of everything you copy
         </h1>
-        <p class="text-neutral-400 text-lg text-center mx-28 mb-14">
+        <p class="text-neutral-400 text-lg text-center mb-14">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
@@ -56,16 +58,23 @@
             Download for Mac
           </button>
         </div>
-        <h1 class="font-semibold text-4xl mb-5">Keep Track of your snippets</h1>
-        <p class="text-neutral-400 text-lg text-center mx-28 mb-14">
+        <h1
+          class="font-semibold text-center text-2xl lg:lg:text-4xl mb-5"
+          text-center
+        >
+          Keep Track of your snippets
+        </h1>
+        <p class="text-neutral-400 text-lg text-center mx-10 mb-14">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
       </div>
 
-      <div class="w-full flex lg:flex-row flex-col items-center justify-center">
-        <div class="basis-6/12 lg:-ml-10">
+      <div
+        class="w-full flex lg:flex-row flex-col items-center justify-center gap-3"
+      >
+        <div class="lg:basis-6/12 lg:-ml-10 mx-10">
           <img
             src="./images/image-computer.png"
             alt="computer"
@@ -73,23 +82,35 @@
           />
         </div>
 
-        <div class="flex basis-6/12 flex-col mx-auto">
+        <div class="flex lg:basis-6/12 flex-col mx-auto">
           <div class="flex flex-col mb-10">
-            <h1 class="font-semibold text-3xl mb-3">Quick Search</h1>
-            <p class="text-neutral-400 text-lg mr-60">
+            <h1 class="font-semibold text-xl mb-3 lg:text-left text-center">
+              Quick Search
+            </h1>
+            <p
+              class="text-neutral-400 text-lg lg:mr-60 lg:text-left text-center lg:mx-0 mx-10"
+            >
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
           </div>
           <div class="flex flex-col mb-10">
-            <h1 class="font-semibold text-3xl mb-3">iCloud Sync</h1>
-            <p class="text-neutral-400 text-lg mr-60">
+            <h1 class="font-semibold text-xl mb-3 lg:text-left text-center">
+              iCloud Sync
+            </h1>
+            <p
+              class="text-neutral-400 text-lg lg:mr-60 lg:text-left text-center lg:mx-0 mx-10"
+            >
               Instantly saves and syncs snippets across all your devices.
             </p>
           </div>
           <div class="flex flex-col mb-10">
-            <h1 class="font-semibold text-3xl mb-3">Complete History</h1>
-            <p class="text-neutral-400 text-lg mr-60">
+            <h1 class="font-semibold text-xl mb-3 lg:text-left text-center">
+              Complete History
+            </h1>
+            <p
+              class="text-neutral-400 text-lg lg:mr-60 lg:text-left text-center lg:mx-0 mx-10"
+            >
               Retrieve any snippets from the first moment you started using the
               app.
             </p>
@@ -97,55 +118,50 @@
         </div>
       </div>
 
-      <h1 class="font-semibold text-4xl mt-10 mb-5">
+      <h1 class="font-semibold lg:text-4xl text-2xl mt-20 mb-5 text-center">
         Access Clipboard Anywhere
       </h1>
-      <p class="text-neutral-400 text-lg text-center mx-40">
+      <p class="text-neutral-400 text-md text-center mx-10">
         Whether you’re on the go, or at your computer, you can access all your
         Clipboard snippets in a few simple clicks.
       </p>
 
       <img src="./images/image-devices.png" alt="devices" class="my-[100px]" />
 
-      <h1 class="font-semibold text-4xl mt-10 mb-5">
+      <h1 class="font-semibold lg:text-4xl text-2xl mt-10 mb-5 text-center">
         Supercharge your workflow
       </h1>
-      <p class="text-neutral-400 text-lg text-center mx-40">
+      <p class="text-neutral-400 lg:text-lg text-md text-center">
         We’ve got the tools to boost your productivity.
       </p>
 
-      <div class="flex lg:flex-row flex-col mt-20 mx-10">
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="./images/icon-blacklist.svg"
-            alt="icon-blacklist"
-            class="w-10 mb-10"
-          />
-          <h1 class="font-semibold text-2xl mb-8">Create blacklists</h1>
-          <p class="text-neutral-400 text-lg text-center mx-28">
+      <div class="flex lg:flex-row flex-col mt-20 mx-10 gap-10">
+        <div class="flex flex-col items-center justify-center basis-4/12">
+          <div class="w-10 h-10 mb-5">
+            <img src="./images/icon-blacklist.svg" alt="icon-blacklist" />
+          </div>
+
+          <h1 class="font-semibold text-2xl mb-3">Create blacklists</h1>
+          <p class="text-neutral-400 lg:text-lg text-md text-center mx-10">
             Ensure sensitive information never makes its way to your clipboard
             by excluding certain sources.
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="./images/icon-text.svg"
-            alt="icon-text"
-            class="w-10 mb-10"
-          />
-          <h1 class="font-semibold text-2xl mb-8">Plain text snippets</h1>
-          <p class="text-neutral-400 text-lg text-center mx-28">
+        <div class="flex flex-col items-center justify-center basis-4/12">
+          <div class="w-10 h-10 mb-5">
+            <img src="./images/icon-text.svg" alt="icon-text" />
+          </div>
+          <h1 class="font-semibold text-2xl mb-3">Plain text snippets</h1>
+          <p class="text-neutral-400 lg:text-lg text-md text-center mx-10">
             Remove unwanted formatting from copied text for a consistent look.
           </p>
         </div>
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="./images/icon-preview.svg"
-            alt="icon-preview"
-            class="w-10 mb-10"
-          />
-          <h1 class="font-semibold text-2xl mb-8">Sneak preview</h1>
-          <p class="text-neutral-400 text-lg text-center mx-28">
+        <div class="flex flex-col items-center justify-center basis-4/12">
+          <div class="w-10 h-10 mb-5">
+            <img src="./images/icon-preview.svg" alt="icon-preview" />
+          </div>
+          <h1 class="font-semibold text-2xl mb-3">Sneak preview</h1>
+          <p class="text-neutral-400 lg:text-lg text-md text-center mx-10">
             Quick preview of all snippets on your Clipboard for easy access.
           </p>
         </div>
@@ -174,11 +190,11 @@
         </div>
       </div>
 
-      <div class="w-[700px] flex flex-col items-center justify-center">
-        <h1 class="font-semibold text-4xl mt-24 mb-5">
+      <div class="lg:w-[700px] flex flex-col items-center justify-center">
+        <h1 class="font-semibold lg:text-4xl text-2xl mt-24 mb-5 text-center">
           Clipboard for iOS and Mac OS
         </h1>
-        <p class="text-neutral-400 text-lg text-center">
+        <p class="text-neutral-400 lg:text-lg text-md text-center mx-10">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
@@ -205,21 +221,47 @@
           <img src="./images/logo.svg" alt="logo" class="w-10" />
         </div>
         <div class="grid lg:grid-cols-3 grid-cols-1 gap-3 basis-6/12">
-          <a href="#" class="text-neutral-500 font-semibold">FAQs</a>
-          <a href="#" class="text-neutral-500 font-semibold">Contact Us</a>
-          <a href="#" class="text-neutral-500 font-semibold">Privacy Policy</a>
-          <a href="#" class="text-neutral-500 font-semibold">Press Kit</a>
-          <a href="#" class="text-neutral-500 font-semibold">Install Guide </a>
+          <a
+            href="#"
+            class="text-neutral-500 font-semibold hover:text-neutral-800 lg:text-left text-center"
+            >FAQs</a
+          >
+          <a
+            href="#"
+            class="text-neutral-500 font-semibold hover:text-neutral-800 lg:text-left text-center"
+            >Contact Us</a
+          >
+          <a
+            href="#"
+            class="text-neutral-500 font-semibold hover:text-neutral-800 lg:text-left text-center"
+            >Privacy Policy</a
+          >
+          <a
+            href="#"
+            class="text-neutral-500 font-semibold hover:text-neutral-800 lg:text-left text-center"
+            >Press Kit</a
+          >
+          <a
+            href="#"
+            class="text-neutral-500 font-semibold hover:text-neutral-800 lg:text-left text-center"
+            >Install Guide
+          </a>
         </div>
 
         <div class="flex items-center justify-center gap-5">
-          <img src="./images/icon-facebook.svg" alt="icon-facebook" />
-          <img src="./images/icon-twitter.svg" alt="icon-twitter" class="" />
-          <img
-            src="./images/icon-instagram.svg"
-            alt="icon-instagram"
-            class=""
-          />
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="icon-facebook"
+          /></a>
+
+          <a href="#"
+            ><img src="./images/icon-twitter.svg" alt="icon-twitter" class=""
+          /></a>
+          <a href="#"
+            ><img
+              src="./images/icon-instagram.svg"
+              alt="icon-instagram"
+              class=""
+          /></a>
         </div>
       </div>
 
